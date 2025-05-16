@@ -1,0 +1,103 @@
+# Social Media Analytics Tool Configuration
+
+# Data Sources
+data_sources:
+  instagram:
+    enabled: true
+    data_path: "data/instagram"
+  tiktok:
+    enabled: true
+    data_path: "data/tiktok"
+  twitter:
+    enabled: true
+    data_path: "data/twitter"
+
+# Data Ingestion
+data_ingestion:
+  use_api: false
+  use_csv: true
+  sample_data_path: "data/sample"
+  batch_size: 1000
+  max_posts_per_fetch: 5000
+
+# Preprocessing
+preprocessing:
+  normalize_metrics: true
+  remove_outliers: true
+  outlier_threshold: 3.0
+  fill_missing_strategy: "mean"
+  feature_scaling: "standard"  # Options: standard, minmax, robust
+
+# Models
+models:
+  posting_time:
+    algorithm: "xgboost"
+    params:
+      n_estimators: 100
+      max_depth: 5
+      learning_rate: 0.1
+    features:
+      - "hour_of_day"
+      - "day_of_week"
+      - "engagement_rate"
+      - "previous_post_performance"
+  
+  content_engagement:
+    algorithm: "random_forest"
+    params:
+      n_estimators: 200
+      max_depth: 10
+      min_samples_split: 5
+    features:
+      - "content_type"
+      - "content_length"
+      - "hashtags"
+      - "mentions"
+      - "media_count"
+  
+  follower_growth:
+    algorithm: "lstm"
+    params:
+      units: 64
+      dropout: 0.2
+      recurrent_dropout: 0.2
+      epochs: 50
+      batch_size: 32
+    sequence_length: 30
+    features:
+      - "post_frequency"
+      - "engagement_rate"
+      - "content_quality_score"
+
+  retention_analysis:
+    enabled: true
+    algorithm: "kmeans"
+    params:
+      n_clusters: 5
+      random_state: 42
+    features:
+      - "engagement_frequency"
+      - "time_since_last_interaction"
+      - "interaction_depth"
+      - "session_duration"
+
+# Dashboard
+dashboard:
+  port: 8050
+  debug: true
+  theme: "light"
+  refresh_interval_seconds: 300
+  charts:
+    - "engagement_over_time"
+    - "follower_growth_forecast"
+    - "optimal_posting_times"
+    - "content_performance_comparison"
+    - "user_cluster_visualization"
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_file: "logs/app.log"
+  rotation: true
+  max_size_mb: 10
+  backup_count: 5 

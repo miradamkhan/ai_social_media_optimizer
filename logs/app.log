@@ -1,0 +1,1248 @@
+2025-05-15 17:10:17,133 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:10:35,228 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:10:35,229 - src.main - INFO - Loading sample data
+2025-05-15 17:10:35,229 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:10:35,242 - src.main - INFO - Preprocessing data
+2025-05-15 17:10:35,242 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:10:35,242 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:10:35,246 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:10:35,256 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:10:35,256 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:10:35,266 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:10:35,266 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:10:35,269 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:10:35,272 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:10:35,273 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:10:35,278 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:10:35,278 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:10:35,280 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:10:35,285 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:10:35,286 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:10:35,291 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:10:35,292 - src.main - INFO - Engineering features
+2025-05-15 17:10:35,292 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:10:35,292 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:10:35,317 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:10:35,317 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:10:35,326 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:10:35,327 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:10:35,341 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:10:35,342 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:13:16,342 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:13:22,258 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:13:22,259 - src.main - INFO - Loading sample data
+2025-05-15 17:13:22,259 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:13:22,264 - src.main - INFO - Preprocessing data
+2025-05-15 17:13:22,265 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:13:22,265 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:13:22,266 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:13:22,273 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:13:22,273 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:13:22,281 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:13:22,282 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:13:22,283 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:13:22,288 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:13:22,289 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:13:22,294 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:13:22,294 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:13:22,295 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:13:22,300 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:13:22,301 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:13:22,304 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:13:22,304 - src.main - INFO - Engineering features
+2025-05-15 17:13:22,305 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:13:22,305 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:13:22,323 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:13:22,324 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:13:22,331 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:13:22,332 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:13:22,342 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:13:22,343 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:13:22,357 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:13:22,358 - src.main - INFO - Loading existing models
+2025-05-15 17:13:22,358 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 17:13:22,359 - src.main - INFO - Launching dashboard
+2025-05-15 17:13:22,359 - src.dashboard.app - INFO - Creating dashboard
+2025-05-15 17:13:22,368 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-05-15 17:13:23,191 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:13:29,336 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:13:29,336 - src.main - INFO - Loading sample data
+2025-05-15 17:13:29,336 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:13:29,342 - src.main - INFO - Preprocessing data
+2025-05-15 17:13:29,342 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:13:29,343 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:13:29,343 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:13:29,348 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:13:29,349 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:13:29,354 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:13:29,354 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:13:29,356 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:13:29,359 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:13:29,359 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:13:29,363 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:13:29,363 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:13:29,364 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:13:29,369 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:13:29,369 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:13:29,373 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:13:29,373 - src.main - INFO - Engineering features
+2025-05-15 17:13:29,373 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:13:29,375 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:13:29,388 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:13:29,388 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:13:29,396 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:13:29,396 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:13:29,405 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:13:29,405 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:13:29,418 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:13:29,418 - src.main - INFO - Loading existing models
+2025-05-15 17:13:29,418 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 17:13:29,419 - src.main - INFO - Launching dashboard
+2025-05-15 17:13:29,419 - src.dashboard.app - INFO - Creating dashboard
+2025-05-15 17:15:35,649 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 17:15:35,660 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 17:15:35,696 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 17:15:35,761 - src.dashboard.app - INFO - Updating content performance chart for instagram
+2025-05-15 17:15:35,791 - src.dashboard.app - INFO - Updating user clusters chart for instagram
+2025-05-15 17:15:36,150 - src.dashboard.app - INFO - Updating cluster profiles table for instagram
+2025-05-15 17:15:36,155 - src.dashboard.app - INFO - Updating growth forecast chart for instagram
+2025-05-15 17:16:52,198 - src.dashboard.app - INFO - Updating follower growth chart for tiktok
+2025-05-15 17:16:52,199 - src.dashboard.app - INFO - Updating engagement metrics chart for tiktok
+2025-05-15 17:16:52,220 - src.dashboard.app - INFO - Updating posting times chart for tiktok
+2025-05-15 17:16:52,250 - src.dashboard.app - INFO - Updating content performance chart for tiktok
+2025-05-15 17:16:52,360 - src.dashboard.app - INFO - Updating user clusters chart for tiktok
+2025-05-15 17:16:52,453 - src.dashboard.app - INFO - Updating cluster profiles table for tiktok
+2025-05-15 17:16:52,499 - src.dashboard.app - INFO - Updating growth forecast chart for tiktok
+2025-05-15 17:16:56,965 - src.dashboard.app - INFO - Updating follower growth chart for twitter
+2025-05-15 17:16:56,966 - src.dashboard.app - INFO - Updating engagement metrics chart for twitter
+2025-05-15 17:16:56,977 - src.dashboard.app - INFO - Updating posting times chart for twitter
+2025-05-15 17:16:57,100 - src.dashboard.app - INFO - Updating content performance chart for twitter
+2025-05-15 17:16:57,176 - src.dashboard.app - INFO - Updating user clusters chart for twitter
+2025-05-15 17:16:57,208 - src.dashboard.app - INFO - Updating cluster profiles table for twitter
+2025-05-15 17:16:57,245 - src.dashboard.app - INFO - Updating growth forecast chart for twitter
+2025-05-15 17:17:00,320 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 17:17:00,331 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 17:17:00,396 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 17:17:00,422 - src.dashboard.app - INFO - Updating content performance chart for instagram
+2025-05-15 17:17:00,492 - src.dashboard.app - INFO - Updating user clusters chart for instagram
+2025-05-15 17:17:00,565 - src.dashboard.app - INFO - Updating cluster profiles table for instagram
+2025-05-15 17:17:00,573 - src.dashboard.app - INFO - Updating growth forecast chart for instagram
+2025-05-15 17:18:27,876 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 17:18:27,886 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 17:18:27,976 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 17:18:31,615 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 17:18:31,623 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 17:18:31,658 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 17:18:32,647 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 17:18:32,661 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 17:18:32,714 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 17:19:51,294 - src.dashboard.app - INFO - Updating follower growth chart for tiktok
+2025-05-15 17:19:51,297 - src.dashboard.app - INFO - Updating engagement metrics chart for tiktok
+2025-05-15 17:19:51,313 - src.dashboard.app - INFO - Updating posting times chart for tiktok
+2025-05-15 17:19:51,364 - src.dashboard.app - INFO - Updating content performance chart for tiktok
+2025-05-15 17:19:51,403 - src.dashboard.app - INFO - Updating user clusters chart for tiktok
+2025-05-15 17:19:51,489 - src.dashboard.app - INFO - Updating cluster profiles table for tiktok
+2025-05-15 17:19:51,528 - src.dashboard.app - INFO - Updating growth forecast chart for tiktok
+2025-05-15 17:19:54,141 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 17:19:54,155 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 17:19:54,186 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 17:19:54,276 - src.dashboard.app - INFO - Updating content performance chart for instagram
+2025-05-15 17:19:54,330 - src.dashboard.app - INFO - Updating user clusters chart for instagram
+2025-05-15 17:19:54,343 - src.dashboard.app - INFO - Updating cluster profiles table for instagram
+2025-05-15 17:19:54,412 - src.dashboard.app - INFO - Updating growth forecast chart for instagram
+2025-05-15 17:22:12,889 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:22:28,005 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:22:28,006 - src.main - INFO - Loading sample data
+2025-05-15 17:22:28,006 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:22:28,051 - src.main - INFO - Preprocessing data
+2025-05-15 17:22:28,051 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:22:28,051 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:22:28,052 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:22:28,065 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:22:28,067 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:22:28,078 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:22:28,078 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:22:28,080 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:22:28,090 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:22:28,091 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:22:28,097 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:22:28,098 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:22:28,101 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:22:28,106 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:22:28,107 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:22:28,114 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:22:28,114 - src.main - INFO - Engineering features
+2025-05-15 17:22:28,114 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:22:28,116 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:22:28,137 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:22:28,138 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:22:28,146 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:22:28,147 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:22:28,157 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:22:28,157 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:22:28,168 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:22:28,168 - src.main - INFO - Loading existing models
+2025-05-15 17:22:28,168 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 17:22:28,170 - src.main - INFO - Generating optimization recommendations
+2025-05-15 17:23:15,465 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:23:22,179 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:23:22,179 - src.main - INFO - Loading sample data
+2025-05-15 17:23:22,179 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:23:22,185 - src.main - INFO - Preprocessing data
+2025-05-15 17:23:22,185 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:23:22,186 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:23:22,187 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:23:22,194 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:23:22,195 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:23:22,199 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:23:22,199 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:23:22,200 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:23:22,206 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:23:22,206 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:23:22,213 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:23:22,213 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:23:22,214 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:23:22,220 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:23:22,221 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:23:22,226 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:23:22,226 - src.main - INFO - Engineering features
+2025-05-15 17:23:22,226 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:23:22,227 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:23:22,244 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:23:22,244 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:23:22,255 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:23:22,255 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:23:22,268 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:23:22,268 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:23:22,284 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:23:22,284 - src.main - INFO - Loading existing models
+2025-05-15 17:23:22,284 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 17:23:22,285 - src.main - INFO - Generating optimization recommendations
+2025-05-15 17:23:34,456 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:23:40,331 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:23:40,331 - src.main - INFO - Loading sample data
+2025-05-15 17:23:40,332 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:23:40,336 - src.main - INFO - Preprocessing data
+2025-05-15 17:23:40,337 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:23:40,337 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:23:40,338 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:23:40,344 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:23:40,345 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:23:40,348 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:23:40,349 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:23:40,350 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:23:40,354 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:23:40,354 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:23:40,358 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:23:40,359 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:23:40,360 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:23:40,364 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:23:40,365 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:23:40,369 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:23:40,369 - src.main - INFO - Engineering features
+2025-05-15 17:23:40,370 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:23:40,370 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:23:40,384 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:23:40,385 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:23:40,393 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:23:40,394 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:23:40,402 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:23:40,403 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:23:40,412 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:23:40,413 - src.main - INFO - Training models
+2025-05-15 17:23:40,413 - src.models.model_manager - INFO - Training all models
+2025-05-15 17:23:40,414 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 17:23:40,414 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 17:23:40,415 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 17:23:40,415 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 17:25:06,451 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:25:12,511 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:25:12,512 - src.main - INFO - Loading sample data
+2025-05-15 17:25:12,512 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:25:12,517 - src.main - INFO - Preprocessing data
+2025-05-15 17:25:12,517 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:25:12,518 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:25:12,520 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:25:12,525 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:25:12,526 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:25:12,529 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:25:12,530 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:25:12,531 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:25:12,534 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:25:12,534 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:25:12,538 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:25:12,539 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:25:12,539 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:25:12,543 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:25:12,544 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:25:12,549 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:25:12,550 - src.main - INFO - Engineering features
+2025-05-15 17:25:12,550 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:25:12,550 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:25:12,565 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:25:12,565 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:25:12,572 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:25:12,573 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:25:12,581 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:25:12,582 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:25:12,594 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:25:12,594 - src.main - INFO - Training models
+2025-05-15 17:25:12,594 - src.models.model_manager - INFO - Training all models
+2025-05-15 17:25:12,595 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 17:25:12,595 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 17:25:12,595 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 17:25:12,596 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 17:25:12,597 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 17:25:12,799 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 17:25:12,800 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 17:25:12,812 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 17:25:12,813 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 17:25:12,814 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 17:25:12,815 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 17:25:43,944 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:25:50,028 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:25:50,029 - src.main - INFO - Loading sample data
+2025-05-15 17:25:50,029 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:25:50,034 - src.main - INFO - Preprocessing data
+2025-05-15 17:25:50,034 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:25:50,034 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:25:50,036 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:25:50,041 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:25:50,042 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:25:50,045 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:25:50,045 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:25:50,047 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:25:50,051 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:25:50,051 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:25:50,055 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:25:50,055 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:25:50,056 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:25:50,061 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:25:50,061 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:25:50,066 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:25:50,066 - src.main - INFO - Engineering features
+2025-05-15 17:25:50,066 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:25:50,066 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:25:50,084 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:25:50,084 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:25:50,091 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:25:50,093 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:25:50,102 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:25:50,102 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:25:50,112 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:25:50,113 - src.main - INFO - Loading existing models
+2025-05-15 17:25:50,113 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 17:25:50,114 - src.main - INFO - Generating optimization recommendations
+2025-05-15 17:26:45,092 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:26:50,868 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:26:50,869 - src.main - INFO - Loading sample data
+2025-05-15 17:26:50,869 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:26:50,875 - src.main - INFO - Preprocessing data
+2025-05-15 17:26:50,875 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:26:50,875 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:26:50,876 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:26:50,881 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:26:50,882 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:26:50,886 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:26:50,886 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:26:50,887 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:26:50,889 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:26:50,890 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:26:50,894 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:26:50,895 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:26:50,896 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:26:50,900 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:26:50,901 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:26:50,904 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:26:50,905 - src.main - INFO - Engineering features
+2025-05-15 17:26:50,905 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:26:50,907 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:26:50,919 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:26:50,919 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:26:50,929 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:26:50,930 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:26:50,940 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:26:50,940 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:26:50,950 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:26:50,950 - src.main - INFO - Training models
+2025-05-15 17:26:50,951 - src.models.model_manager - INFO - Training all models
+2025-05-15 17:26:50,951 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 17:26:50,951 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 17:26:50,952 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 17:26:50,952 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 17:26:50,953 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 17:26:51,034 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 17:26:51,034 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 17:26:51,048 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 17:26:51,048 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 17:26:51,049 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 17:26:51,049 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 17:27:14,331 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:27:20,252 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:27:20,254 - src.main - INFO - Loading sample data
+2025-05-15 17:27:20,254 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:27:20,260 - src.main - INFO - Preprocessing data
+2025-05-15 17:27:20,261 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:27:20,261 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:27:20,262 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:27:20,267 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:27:20,268 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:27:20,272 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:27:20,273 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:27:20,273 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:27:20,278 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:27:20,278 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:27:20,284 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:27:20,284 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:27:20,285 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:27:20,291 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:27:20,291 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:27:20,295 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:27:20,295 - src.main - INFO - Engineering features
+2025-05-15 17:27:20,296 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:27:20,296 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:27:20,310 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:27:20,310 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:27:20,318 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:27:20,318 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:27:20,327 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:27:20,327 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:27:20,338 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:27:20,338 - src.main - INFO - Training models
+2025-05-15 17:27:20,339 - src.models.model_manager - INFO - Training all models
+2025-05-15 17:27:20,339 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 17:27:20,339 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 17:27:20,340 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 17:27:20,340 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 17:27:20,341 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 17:27:20,419 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 17:27:20,420 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 17:27:20,434 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 17:27:20,434 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 17:27:20,435 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 17:27:20,435 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 17:29:33,306 - root - INFO - Logging initialized at level: INFO
+2025-05-15 17:29:39,131 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 17:29:39,131 - src.main - INFO - Loading sample data
+2025-05-15 17:29:39,131 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 17:29:39,137 - src.main - INFO - Preprocessing data
+2025-05-15 17:29:39,137 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 17:29:39,137 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 17:29:39,138 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:29:39,145 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:29:39,145 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 17:29:39,149 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 17:29:39,149 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 17:29:39,150 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:29:39,154 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:29:39,154 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 17:29:39,158 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 17:29:39,159 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 17:29:39,160 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:29:39,164 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 17:29:39,164 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 17:29:39,167 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 17:29:39,167 - src.main - INFO - Engineering features
+2025-05-15 17:29:39,169 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 17:29:39,169 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 17:29:39,181 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 17:29:39,183 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 17:29:39,189 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 17:29:39,190 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 17:29:39,198 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 17:29:39,198 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 17:29:39,208 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 17:29:39,208 - src.main - INFO - Training models
+2025-05-15 17:29:39,209 - src.models.model_manager - INFO - Training all models
+2025-05-15 17:29:39,209 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 17:29:39,209 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 17:29:39,210 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 17:29:39,210 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 17:29:39,211 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 17:29:39,285 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 17:29:39,286 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 17:29:39,299 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 17:29:39,300 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 17:29:39,300 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 17:29:39,301 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:06:34,115 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:06:40,219 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:06:40,219 - src.main - INFO - Loading sample data
+2025-05-15 18:06:40,220 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:06:40,226 - src.main - INFO - Preprocessing data
+2025-05-15 18:06:40,226 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:06:40,226 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:06:40,227 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:06:40,232 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:06:40,232 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:06:40,236 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:06:40,237 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:06:40,238 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:06:40,242 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:06:40,243 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:06:40,246 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:06:40,247 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:06:40,248 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:06:40,252 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:06:40,253 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:06:40,257 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:06:40,258 - src.main - INFO - Engineering features
+2025-05-15 18:06:40,258 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:06:40,258 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:06:40,271 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:06:40,272 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:06:40,279 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:06:40,280 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:06:40,289 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:06:40,289 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:06:40,299 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:06:40,300 - src.main - INFO - Training models
+2025-05-15 18:06:40,300 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:06:40,300 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:06:40,300 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:06:40,301 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:06:40,301 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:06:40,302 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:06:40,380 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:06:40,380 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:06:40,395 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:06:40,395 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:06:40,396 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:06:40,397 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:07:03,335 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:07:09,115 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:07:09,116 - src.main - INFO - Loading sample data
+2025-05-15 18:07:09,117 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:07:09,124 - src.main - INFO - Preprocessing data
+2025-05-15 18:07:09,125 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:07:09,125 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:07:09,127 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:07:09,134 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:07:09,134 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:07:09,141 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:07:09,142 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:07:09,143 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:07:09,149 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:07:09,150 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:07:09,155 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:07:09,156 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:07:09,158 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:07:09,162 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:07:09,163 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:07:09,167 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:07:09,168 - src.main - INFO - Engineering features
+2025-05-15 18:07:09,168 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:07:09,168 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:07:09,184 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:07:09,185 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:07:09,193 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:07:09,194 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:07:09,202 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:07:09,204 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:07:09,218 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:07:09,218 - src.main - INFO - Training models
+2025-05-15 18:07:09,218 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:07:09,218 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:07:09,220 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:07:09,220 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:07:09,220 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:07:09,221 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:07:09,300 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:07:09,300 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:07:09,314 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:07:09,315 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:07:09,315 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:07:09,316 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:09:33,169 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:09:38,887 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:09:38,887 - src.main - INFO - Loading sample data
+2025-05-15 18:09:38,887 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:09:38,892 - src.main - INFO - Preprocessing data
+2025-05-15 18:09:38,892 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:09:38,892 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:09:38,893 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:09:38,898 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:09:38,898 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:09:38,903 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:09:38,903 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:09:38,904 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:09:38,907 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:09:38,907 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:09:38,911 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:09:38,912 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:09:38,913 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:09:38,916 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:09:38,917 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:09:38,921 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:09:38,921 - src.main - INFO - Engineering features
+2025-05-15 18:09:38,922 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:09:38,922 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:09:38,938 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:09:38,938 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:09:38,944 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:09:38,946 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:09:38,953 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:09:38,953 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:09:38,964 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:09:38,965 - src.main - INFO - Training models
+2025-05-15 18:09:38,965 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:09:38,965 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:09:38,966 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:09:38,966 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:09:38,966 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:09:38,967 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:09:39,037 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:09:39,038 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:09:39,051 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:09:39,052 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:09:39,052 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:09:39,053 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:09:43,657 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:09:49,732 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:09:49,733 - src.main - INFO - Loading sample data
+2025-05-15 18:09:49,733 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:09:49,741 - src.main - INFO - Preprocessing data
+2025-05-15 18:09:49,741 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:09:49,741 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:09:49,742 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:09:49,753 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:09:49,754 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:09:49,758 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:09:49,760 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:09:49,760 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:09:49,766 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:09:49,767 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:09:49,774 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:09:49,774 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:09:49,776 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:09:49,786 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:09:49,787 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:09:49,795 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:09:49,795 - src.main - INFO - Engineering features
+2025-05-15 18:09:49,796 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:09:49,796 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:09:49,813 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:09:49,814 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:09:49,824 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:09:49,824 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:09:49,837 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:09:49,837 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:09:49,851 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:09:49,851 - src.main - INFO - Loading existing models
+2025-05-15 18:09:49,852 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 18:09:49,852 - src.main - INFO - Generating optimization recommendations
+2025-05-15 18:10:11,158 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:10:17,028 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:10:17,029 - src.main - INFO - Loading sample data
+2025-05-15 18:10:17,029 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:10:17,037 - src.main - INFO - Preprocessing data
+2025-05-15 18:10:17,037 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:10:17,038 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:10:17,040 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:10:17,045 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:10:17,045 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:10:17,050 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:10:17,050 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:10:17,051 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:10:17,054 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:10:17,055 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:10:17,058 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:10:17,059 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:10:17,060 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:10:17,066 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:10:17,066 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:10:17,069 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:10:17,071 - src.main - INFO - Engineering features
+2025-05-15 18:10:17,071 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:10:17,071 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:10:17,084 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:10:17,084 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:10:17,091 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:10:17,092 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:10:17,104 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:10:17,104 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:10:17,116 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:10:17,116 - src.main - INFO - Training models
+2025-05-15 18:10:17,117 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:10:17,117 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:10:17,117 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:10:17,118 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:10:17,118 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:10:17,120 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:10:17,195 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:10:17,195 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:10:17,208 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:10:17,208 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:10:17,209 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:10:17,209 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:19:19,731 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:19:25,665 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:19:25,666 - src.main - INFO - Loading sample data
+2025-05-15 18:19:25,666 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:19:25,671 - src.main - INFO - Preprocessing data
+2025-05-15 18:19:25,672 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:19:25,672 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:19:25,673 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:19:25,677 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:19:25,677 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:19:25,682 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:19:25,682 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:19:25,683 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:19:25,686 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:19:25,687 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:19:25,690 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:19:25,690 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:19:25,691 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:19:25,696 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:19:25,697 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:19:25,700 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:19:25,700 - src.main - INFO - Engineering features
+2025-05-15 18:19:25,701 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:19:25,701 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:19:25,716 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:19:25,716 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:19:25,722 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:19:25,723 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:19:25,732 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:19:25,733 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:19:25,744 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:19:25,744 - src.main - INFO - Training models
+2025-05-15 18:19:25,745 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:19:25,745 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:19:25,745 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:19:25,746 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:19:25,746 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:19:25,747 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:19:25,824 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:19:25,825 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:19:25,839 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:19:25,840 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:19:25,840 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:19:25,841 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:20:53,521 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:20:59,325 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:20:59,326 - src.main - INFO - Loading sample data
+2025-05-15 18:20:59,326 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:20:59,331 - src.main - INFO - Preprocessing data
+2025-05-15 18:20:59,331 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:20:59,332 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:20:59,333 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:20:59,337 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:20:59,338 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:20:59,342 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:20:59,342 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:20:59,343 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:20:59,345 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:20:59,346 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:20:59,350 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:20:59,350 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:20:59,351 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:20:59,355 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:20:59,355 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:20:59,359 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:20:59,360 - src.main - INFO - Engineering features
+2025-05-15 18:20:59,360 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:20:59,361 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:20:59,376 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:20:59,377 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:20:59,385 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:20:59,386 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:20:59,396 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:20:59,396 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:20:59,409 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:20:59,409 - src.main - INFO - Training models
+2025-05-15 18:20:59,410 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:20:59,410 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:20:59,410 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:20:59,411 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:20:59,411 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:20:59,412 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:20:59,487 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:20:59,488 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:20:59,502 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:20:59,503 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:20:59,503 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:20:59,504 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:21:59,486 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:22:05,884 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:22:05,885 - src.main - INFO - Loading sample data
+2025-05-15 18:22:05,885 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:22:05,900 - src.main - INFO - Preprocessing data
+2025-05-15 18:22:05,900 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:22:05,900 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:22:05,902 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:22:05,908 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:22:05,908 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:22:05,912 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:22:05,913 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:22:05,913 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:22:05,918 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:22:05,918 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:22:05,921 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:22:05,922 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:22:05,924 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:22:05,929 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:22:05,929 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:22:05,935 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:22:05,935 - src.main - INFO - Engineering features
+2025-05-15 18:22:05,935 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:22:05,935 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:22:05,949 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:22:05,950 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:22:05,957 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:22:05,957 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:22:05,966 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:22:05,967 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:22:05,977 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:22:05,977 - src.main - INFO - Training models
+2025-05-15 18:22:05,978 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:22:05,978 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:22:05,979 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:22:05,979 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:22:05,981 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:22:05,981 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:22:06,072 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:22:06,073 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:22:06,087 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:22:06,088 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:22:06,089 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:22:06,090 - src.models.content_engagement_model - INFO - Using features: ['content_type', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'hashtags', 'mentions']
+2025-05-15 18:23:18,107 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:23:32,602 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:23:32,602 - src.main - INFO - Loading sample data
+2025-05-15 18:23:32,603 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:23:32,608 - src.main - INFO - Preprocessing data
+2025-05-15 18:23:32,609 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:23:32,609 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:23:32,610 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:23:32,616 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:23:32,616 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:23:32,622 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:23:32,622 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:23:32,623 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:23:32,626 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:23:32,626 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:23:32,631 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:23:32,631 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:23:32,632 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:23:32,637 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:23:32,637 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:23:32,641 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:23:32,641 - src.main - INFO - Engineering features
+2025-05-15 18:23:32,642 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:23:32,642 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:23:32,657 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:23:32,657 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:23:32,664 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:23:32,665 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:23:32,673 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:23:32,674 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:23:32,686 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:23:32,686 - src.main - INFO - Training models
+2025-05-15 18:23:32,687 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:23:32,687 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:23:32,687 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:23:32,687 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:23:32,687 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:23:32,688 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:23:32,787 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:23:32,788 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:23:32,801 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:23:32,801 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:23:32,802 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:23:32,804 - src.models.content_engagement_model - INFO - Using features: ['hashtags', 'mentions', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'content_carousel', 'content_image', 'content_video']
+2025-05-15 18:23:34,567 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:23:40,607 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:23:40,607 - src.main - INFO - Loading sample data
+2025-05-15 18:23:40,608 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:23:40,614 - src.main - INFO - Preprocessing data
+2025-05-15 18:23:40,614 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:23:40,614 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:23:40,615 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:23:40,621 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:23:40,621 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:23:40,624 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:23:40,626 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:23:40,627 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:23:40,630 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:23:40,631 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:23:40,633 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:23:40,635 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:23:40,636 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:23:40,640 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:23:40,641 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:23:40,644 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:23:40,646 - src.main - INFO - Engineering features
+2025-05-15 18:23:40,646 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:23:40,646 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:23:40,660 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:23:40,660 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:23:40,667 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:23:40,667 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:23:40,676 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:23:40,677 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:23:40,687 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:23:40,687 - src.main - INFO - Training models
+2025-05-15 18:23:40,687 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:23:40,688 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:23:40,688 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:23:40,689 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:23:40,689 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:23:40,690 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:23:40,766 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:23:40,767 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:23:40,777 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:23:40,779 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:23:40,779 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:23:40,782 - src.models.content_engagement_model - INFO - Using features: ['hashtags', 'mentions', 'content_carousel', 'content_image', 'content_video', 'content_quality_score', 'content_carousel', 'content_image', 'content_video']
+2025-05-15 18:24:38,833 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:24:44,791 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:24:44,791 - src.main - INFO - Loading sample data
+2025-05-15 18:24:44,792 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:24:44,798 - src.main - INFO - Preprocessing data
+2025-05-15 18:24:44,799 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:24:44,799 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:24:44,800 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:24:44,805 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:24:44,807 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:24:44,811 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:24:44,811 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:24:44,812 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:24:44,816 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:24:44,817 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:24:44,822 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:24:44,822 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:24:44,823 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:24:44,829 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:24:44,829 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:24:44,833 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:24:44,833 - src.main - INFO - Engineering features
+2025-05-15 18:24:44,833 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:24:44,833 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:24:44,846 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:24:44,847 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:24:44,853 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:24:44,854 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:24:44,862 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:24:44,862 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:24:44,874 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:24:44,875 - src.main - INFO - Training models
+2025-05-15 18:24:44,875 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:24:44,875 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:24:44,876 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:24:44,876 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:24:44,876 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:24:44,877 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:24:44,953 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:24:44,954 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:24:44,967 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:24:44,968 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:24:44,968 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:24:44,971 - src.models.content_engagement_model - INFO - Using features: ['hashtags', 'mentions', 'content_carousel', 'content_image', 'content_video', 'content_quality_score']
+2025-05-15 18:25:00,939 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:25:06,764 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:25:06,764 - src.main - INFO - Loading sample data
+2025-05-15 18:25:06,764 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:25:06,770 - src.main - INFO - Preprocessing data
+2025-05-15 18:25:06,770 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:25:06,770 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:25:06,771 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:25:06,777 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:25:06,777 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:25:06,782 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:25:06,783 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:25:06,783 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:25:06,786 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:25:06,787 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:25:06,791 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:25:06,792 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:25:06,793 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:25:06,798 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:25:06,799 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:25:06,804 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:25:06,805 - src.main - INFO - Engineering features
+2025-05-15 18:25:06,805 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:25:06,805 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:25:06,818 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:25:06,819 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:25:06,825 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:25:06,825 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:25:06,834 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:25:06,834 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:25:06,845 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:25:06,846 - src.main - INFO - Training models
+2025-05-15 18:25:06,846 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:25:06,847 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:25:06,847 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:25:06,847 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:25:06,848 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:25:06,849 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:25:06,928 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:25:06,929 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:25:06,941 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:25:06,941 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:25:06,942 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:25:06,944 - src.models.content_engagement_model - INFO - Using features: ['hashtags', 'mentions', 'content_carousel', 'content_image', 'content_video', 'content_quality_score']
+2025-05-15 18:25:58,436 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:26:04,222 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:26:04,223 - src.main - INFO - Loading sample data
+2025-05-15 18:26:04,223 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:26:04,228 - src.main - INFO - Preprocessing data
+2025-05-15 18:26:04,229 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:26:04,229 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:26:04,230 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:26:04,236 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:04,236 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:26:04,240 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:26:04,240 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:26:04,241 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:26:04,245 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:04,245 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:26:04,248 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:26:04,249 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:26:04,249 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:26:04,255 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:04,256 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:26:04,259 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:26:04,260 - src.main - INFO - Engineering features
+2025-05-15 18:26:04,260 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:26:04,262 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:26:04,278 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:26:04,278 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:26:04,285 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:26:04,286 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:26:04,296 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:26:04,296 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:26:04,305 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:26:04,307 - src.main - INFO - Training models
+2025-05-15 18:26:04,307 - src.models.model_manager - INFO - Training all models
+2025-05-15 18:26:04,308 - src.models.model_manager - INFO - Training posting time model
+2025-05-15 18:26:04,308 - src.models.posting_time_model - INFO - Training posting time model
+2025-05-15 18:26:04,308 - src.models.posting_time_model - WARNING - Missing required columns: ['engagement_rate', 'previous_post_performance']
+2025-05-15 18:26:04,309 - src.models.posting_time_model - INFO - Using available columns: ['hour_of_day', 'day_of_week']
+2025-05-15 18:26:04,310 - src.models.posting_time_model - WARNING - No target column (posting_time_score or engagement_rate) found. Creating default target.
+2025-05-15 18:26:04,387 - src.models.posting_time_model - INFO - Model trained with MSE: 0.0000, R²: 1.0000
+2025-05-15 18:26:04,388 - src.models.posting_time_model - INFO - Finding best posting times
+2025-05-15 18:26:04,399 - src.models.posting_time_model - INFO - Best posting times found: {0: [9, 10, 16], 1: [11, 15, 8], 2: [10, 11, 14], 3: [9, 11, 14], 4: [9, 10, 12], 5: [9, 10, 16], 6: [9, 12, 17]}
+2025-05-15 18:26:04,400 - src.models.model_manager - INFO - Training content engagement model
+2025-05-15 18:26:04,400 - src.models.content_engagement_model - INFO - Training content engagement model
+2025-05-15 18:26:04,404 - src.models.content_engagement_model - INFO - Using features: ['hashtags', 'mentions', 'content_carousel', 'content_image', 'content_video', 'content_quality_score']
+2025-05-15 18:26:04,658 - src.models.content_engagement_model - INFO - Model trained with MSE: 9.3828, R²: 0.2859
+2025-05-15 18:26:04,659 - src.models.content_engagement_model - INFO - Analyzing content type performance
+2025-05-15 18:26:04,662 - src.models.content_engagement_model - INFO - Content performance analysis: {'carousel': 5.5264634619872055, 'video': 4.261343082403291, 'image': 3.661486103144589}
+2025-05-15 18:26:04,663 - src.models.model_manager - INFO - Training follower growth model
+2025-05-15 18:26:04,663 - src.models.follower_growth_model - INFO - Training follower growth model
+2025-05-15 18:26:04,665 - src.models.follower_growth_model - INFO - Using features: ['followers_count']
+2025-05-15 18:26:04,666 - src.models.follower_growth_model - WARNING - Not enough data for sequence length 30
+2025-05-15 18:26:04,666 - src.models.follower_growth_model - ERROR - Not enough data to create sequences
+2025-05-15 18:26:04,667 - src.models.model_manager - WARNING - Retention analysis data not available for training
+2025-05-15 18:26:04,667 - src.main - INFO - Saving models
+2025-05-15 18:26:04,667 - src.models.model_manager - INFO - Saving models to disk
+2025-05-15 18:26:04,673 - src.models.model_manager - INFO - Saved posting time model to models\posting_time_model.pkl
+2025-05-15 18:26:04,803 - src.models.model_manager - INFO - Saved content engagement model to models\content_engagement_model.pkl
+2025-05-15 18:26:04,805 - src.models.model_manager - INFO - Saved follower growth model to models\follower_growth_model.pkl
+2025-05-15 18:26:13,902 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:26:19,871 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:26:19,872 - src.main - INFO - Loading sample data
+2025-05-15 18:26:19,872 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:26:19,878 - src.main - INFO - Preprocessing data
+2025-05-15 18:26:19,878 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:26:19,878 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:26:19,879 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:26:19,885 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:19,885 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:26:19,889 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:26:19,891 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:26:19,891 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:26:19,895 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:19,895 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:26:19,898 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:26:19,899 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:26:19,899 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:26:19,905 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:19,905 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:26:19,909 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:26:19,910 - src.main - INFO - Engineering features
+2025-05-15 18:26:19,910 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:26:19,910 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:26:19,927 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:26:19,928 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:26:19,934 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:26:19,935 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:26:19,943 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:26:19,944 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:26:19,954 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:26:19,955 - src.main - INFO - Loading existing models
+2025-05-15 18:26:19,955 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 18:26:20,842 - src.models.model_manager - INFO - Loaded posting time model from models\posting_time_model.pkl
+2025-05-15 18:26:20,964 - src.models.model_manager - INFO - Loaded content engagement model from models\content_engagement_model.pkl
+2025-05-15 18:26:20,972 - src.models.model_manager - INFO - Loaded follower growth model from models\follower_growth_model.pkl
+2025-05-15 18:26:20,973 - src.main - INFO - Generating optimization recommendations
+2025-05-15 18:26:20,973 - src.models.posting_time_model - INFO - Predicting optimal posting times for next 7 days
+2025-05-15 18:26:41,397 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:26:47,287 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:26:47,287 - src.main - INFO - Loading sample data
+2025-05-15 18:26:47,288 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:26:47,293 - src.main - INFO - Preprocessing data
+2025-05-15 18:26:47,293 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:26:47,293 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:26:47,294 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:26:47,300 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:47,300 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:26:47,304 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:26:47,304 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:26:47,305 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:26:47,309 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:47,310 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:26:47,313 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:26:47,313 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:26:47,314 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:26:47,319 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:26:47,320 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:26:47,324 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:26:47,324 - src.main - INFO - Engineering features
+2025-05-15 18:26:47,324 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:26:47,325 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:26:47,340 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:26:47,340 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:26:47,349 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:26:47,349 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:26:47,357 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:26:47,357 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:26:47,368 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:26:47,368 - src.main - INFO - Loading existing models
+2025-05-15 18:26:47,369 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 18:26:47,404 - src.models.model_manager - INFO - Loaded posting time model from models\posting_time_model.pkl
+2025-05-15 18:26:47,528 - src.models.model_manager - INFO - Loaded content engagement model from models\content_engagement_model.pkl
+2025-05-15 18:26:47,529 - src.models.model_manager - INFO - Loaded follower growth model from models\follower_growth_model.pkl
+2025-05-15 18:26:47,529 - src.main - INFO - Generating optimization recommendations
+2025-05-15 18:26:47,530 - src.models.posting_time_model - INFO - Predicting optimal posting times for next 7 days
+2025-05-15 18:26:47,533 - src.models.content_engagement_model - INFO - Generating content recommendations
+2025-05-15 18:26:47,534 - src.models.follower_growth_model - WARNING - Model not trained yet or missing data for prediction
+2025-05-15 18:27:22,984 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:27:29,017 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:27:29,017 - src.main - INFO - Loading sample data
+2025-05-15 18:27:29,018 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:27:29,023 - src.main - INFO - Preprocessing data
+2025-05-15 18:27:29,023 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:27:29,024 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:27:29,026 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:27:29,033 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:27:29,033 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:27:29,039 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:27:29,039 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:27:29,040 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:27:29,044 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:27:29,044 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:27:29,049 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:27:29,049 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:27:29,051 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:27:29,056 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:27:29,056 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:27:29,059 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:27:29,060 - src.main - INFO - Engineering features
+2025-05-15 18:27:29,060 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:27:29,061 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:27:29,073 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:27:29,073 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:27:29,081 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:27:29,082 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:27:29,091 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:27:29,091 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:27:29,100 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:27:29,102 - src.main - INFO - Loading existing models
+2025-05-15 18:27:29,102 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 18:27:29,137 - src.models.model_manager - INFO - Loaded posting time model from models\posting_time_model.pkl
+2025-05-15 18:27:29,259 - src.models.model_manager - INFO - Loaded content engagement model from models\content_engagement_model.pkl
+2025-05-15 18:27:29,261 - src.models.model_manager - INFO - Loaded follower growth model from models\follower_growth_model.pkl
+2025-05-15 18:27:29,262 - src.main - INFO - Launching dashboard
+2025-05-15 18:27:29,262 - src.dashboard.app - INFO - Creating dashboard
+2025-05-15 18:27:29,273 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-05-15 18:27:30,191 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:27:36,095 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:27:36,096 - src.main - INFO - Loading sample data
+2025-05-15 18:27:36,097 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:27:36,102 - src.main - INFO - Preprocessing data
+2025-05-15 18:27:36,102 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:27:36,102 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:27:36,103 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:27:36,110 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:27:36,110 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:27:36,116 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:27:36,116 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:27:36,117 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:27:36,121 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:27:36,122 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:27:36,125 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:27:36,126 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:27:36,127 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:27:36,131 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:27:36,131 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:27:36,134 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:27:36,136 - src.main - INFO - Engineering features
+2025-05-15 18:27:36,136 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:27:36,136 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:27:36,148 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:27:36,148 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:27:36,154 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:27:36,155 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:27:36,163 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:27:36,163 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:27:36,173 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:27:36,173 - src.main - INFO - Loading existing models
+2025-05-15 18:27:36,173 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 18:27:36,206 - src.models.model_manager - INFO - Loaded posting time model from models\posting_time_model.pkl
+2025-05-15 18:27:36,314 - src.models.model_manager - INFO - Loaded content engagement model from models\content_engagement_model.pkl
+2025-05-15 18:27:36,315 - src.models.model_manager - INFO - Loaded follower growth model from models\follower_growth_model.pkl
+2025-05-15 18:27:36,316 - src.main - INFO - Launching dashboard
+2025-05-15 18:27:36,316 - src.dashboard.app - INFO - Creating dashboard
+2025-05-15 18:28:02,950 - src.dashboard.app - INFO - Updating follower growth chart for instagram
+2025-05-15 18:28:02,954 - src.dashboard.app - INFO - Updating engagement metrics chart for instagram
+2025-05-15 18:28:02,980 - src.dashboard.app - INFO - Updating posting times chart for instagram
+2025-05-15 18:28:02,981 - src.models.posting_time_model - INFO - Predicting optimal posting times for next 7 days
+2025-05-15 18:28:03,030 - src.dashboard.app - INFO - Updating content performance chart for instagram
+2025-05-15 18:28:03,032 - src.models.content_engagement_model - INFO - Generating content recommendations
+2025-05-15 18:28:03,087 - src.dashboard.app - INFO - Updating user clusters chart for instagram
+2025-05-15 18:28:03,338 - src.dashboard.app - INFO - Updating cluster profiles table for instagram
+2025-05-15 18:28:03,346 - src.dashboard.app - INFO - Updating growth forecast chart for instagram
+2025-05-15 18:28:03,347 - src.models.follower_growth_model - WARNING - Model not trained yet or missing data for prediction
+2025-05-15 18:28:17,175 - root - INFO - Logging initialized at level: INFO
+2025-05-15 18:28:23,325 - src.main - INFO - Starting Social Media Analytics Tool
+2025-05-15 18:28:23,325 - src.main - INFO - Loading sample data
+2025-05-15 18:28:23,325 - src.data_ingestion.data_loader - INFO - Loading sample data
+2025-05-15 18:28:23,331 - src.main - INFO - Preprocessing data
+2025-05-15 18:28:23,331 - src.preprocessing.data_preprocessor - INFO - Starting data preprocessing
+2025-05-15 18:28:23,331 - src.preprocessing.data_preprocessor - INFO - Preprocessing posts data
+2025-05-15 18:28:23,332 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:28:23,339 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:28:23,340 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['caption_length', 'hashtags', 'mentions', 'likes', 'comments', 'shares', 'saves', 'reach', 'impressions']
+2025-05-15 18:28:23,344 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing posts data: 30 rows
+2025-05-15 18:28:23,344 - src.preprocessing.data_preprocessor - INFO - Preprocessing followers data
+2025-05-15 18:28:23,346 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:28:23,350 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:28:23,350 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['followers_count', 'followers_gained', 'followers_lost', 'profile_views', 'reach']
+2025-05-15 18:28:23,354 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing followers data: 30 rows
+2025-05-15 18:28:23,354 - src.preprocessing.data_preprocessor - INFO - Preprocessing engagement data
+2025-05-15 18:28:23,356 - src.preprocessing.data_preprocessor - INFO - Removing outliers from numeric columns: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:28:23,359 - src.preprocessing.data_preprocessor - INFO - Removed 0 outliers (0.00% of data)
+2025-05-15 18:28:23,360 - src.preprocessing.data_preprocessor - INFO - Normalizing metrics: ['active_users', 'likes_received', 'comments_received', 'shares_received', 'story_views', 'profile_clicks']
+2025-05-15 18:28:23,363 - src.preprocessing.data_preprocessor - INFO - Finished preprocessing engagement data: 48 rows
+2025-05-15 18:28:23,364 - src.main - INFO - Engineering features
+2025-05-15 18:28:23,364 - src.preprocessing.feature_engineering - INFO - Starting feature engineering
+2025-05-15 18:28:23,364 - src.preprocessing.feature_engineering - INFO - Engineering post features
+2025-05-15 18:28:23,378 - src.preprocessing.feature_engineering - INFO - Engineered post features: (30, 27)
+2025-05-15 18:28:23,378 - src.preprocessing.feature_engineering - INFO - Engineering follower features
+2025-05-15 18:28:23,385 - src.preprocessing.feature_engineering - INFO - Engineered follower features: (30, 16)
+2025-05-15 18:28:23,385 - src.preprocessing.feature_engineering - INFO - Engineering engagement features
+2025-05-15 18:28:23,397 - src.preprocessing.feature_engineering - INFO - Engineered engagement features: (48, 16)
+2025-05-15 18:28:23,398 - src.preprocessing.feature_engineering - INFO - Engineering combined features
+2025-05-15 18:28:23,408 - src.preprocessing.feature_engineering - INFO - Engineered combined features: 1 datasets
+2025-05-15 18:28:23,409 - src.main - INFO - Loading existing models
+2025-05-15 18:28:23,409 - src.models.model_manager - INFO - Loading models from disk
+2025-05-15 18:28:23,440 - src.models.model_manager - INFO - Loaded posting time model from models\posting_time_model.pkl
+2025-05-15 18:28:23,549 - src.models.model_manager - INFO - Loaded content engagement model from models\content_engagement_model.pkl
+2025-05-15 18:28:23,550 - src.models.model_manager - INFO - Loaded follower growth model from models\follower_growth_model.pkl
+2025-05-15 18:28:23,550 - src.main - INFO - Launching dashboard
+2025-05-15 18:28:23,550 - src.dashboard.app - INFO - Creating dashboard
